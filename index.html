@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+<body>
+
+    <div id="bigContainer">
+        <div class="smallContainer">
+
+           
+            
+            <div class="center rotator "></div>
+            <div class="center rotator1"></div>
+            <div class="center rotator2"></div>
+
+           
+
+            <div class="center rotatorMe removeDot"></div>
+            <div class="center rotatorMe1 removeDot"></div>
+            <div class="center rotatorMe2 removeDot"></div>
+
+            <div class="center rotatorMe3 ">
+                <div class="number number1">1</div>
+                <div class="number number2">2</div>
+                <div class="number number3">3</div>
+                <div class="number number4">4</div>
+                <div class="number number5">5</div>
+               <div class="number number6">9</div>
+               <div class="number number7">7</div>
+               <div class="number number8">8</div>
+               <div class="number number9">9</div>
+               <div class="number number10">10</div>
+               <div class="number number11">11</div>
+               <div class="number number12">12</div>
+            </div>
+
+            <div class="center container myOwnTime remove">
+                <span id="myHours">00</span>
+                <span >:</span>
+                <span id="myMinutes">00</span>
+                <span >:</span>
+                <span id="mySeconds" >00</span>
+                
+                <span id="mySession">AM</span>
+                
+                <span id="integer"></span>
+            </div>
+        
+            <div class="center container theRealTime "> 
+                <span id="realHours">00</span>
+                <span >:</span>
+                <span id="realMinutes">40</span>
+                <span >:</span>
+                <span id="realSeconds" >00</span>
+                <span id="realSession">AM</span> 
+
+            </div>
+        
+           
+                <button class="toggler" >Switch Time</button>
+            
+        </div>
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

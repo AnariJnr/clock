@@ -1,0 +1,394 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #624f82 ;
+    overflow: hidden;
+}
+
+#bigContainer{
+    width: 100%;
+    height: 100vh;
+    /* background: rgb(18,18,20); */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.smallContainer{
+    width: 500px;
+    height: 500px;
+    background: #3f3b6c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.center{
+    width: 70%;
+    height: 70%;
+    /* background: yellow; */
+    position: absolute;
+   
+    /* border-radius: 50%; */
+} 
+
+
+.rotator {
+    background-color: rgba(222, 184, 135,0.8);
+    transform: rotate(199deg);
+    transition: 1s linear;
+    border-radius: 20px;
+    
+}
+
+.rotator::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: rgb(236, 159, 58);
+    left: -20px;
+    top: -25px;
+    border-radius: 50%;
+    transition: 1s linear; 
+    
+}
+
+.rotator1 {
+    background-color: rgba(250, 128, 114,0.8);
+    transform: rotate(0deg);
+    transition: 1s linear;
+    border-radius: 20px;
+}
+
+.rotator1::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: rgb(245, 87, 70);
+    left: -20px;
+    top: -20px;
+    border-radius: 50%;
+    transition: 1s linear;
+    
+}
+
+.rotator2 {
+    background-color: rgba(220, 20, 60,0.8);
+    transform: rotate(58deg);
+    transition: 1s linear;
+    border-radius: 20px;
+}
+
+.rotator2::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: deeppink;
+    left: -20px;
+    top: -20px;
+    border-radius: 50%;
+    transition: 1s linear;
+    
+    
+}
+
+.rotatorMe {
+    background-color:rgba(0, 139, 139,0.8);
+    transform: rotate(45deg);
+    transition: 1s linear;
+    border-radius: 20px;
+}
+
+.rotatorMe::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: rgb(37, 172, 172);
+    left: -20px;
+    top: -20px;
+    border-radius: 50%;
+    transition: 1s linear;
+    
+    
+}
+
+.rotatorMe1 {
+    background-color:rgba(247, 247, 82,0.8);
+    transform: rotate(565deg);
+    transition: 1s linear;
+    border-radius: 20px;
+}
+
+.rotatorMe1::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: yellow;
+    left: -20px;
+    top: -20px;
+    border-radius: 50%;
+    transition: 1s linear;
+    
+    
+}
+
+.rotatorMe2 {
+    background-color:rgba(62, 182, 233,0.8);
+    transform: rotate(132deg);
+    transition: 1s linear;
+    border-radius: 20px;
+}
+
+.rotatorMe2::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color:#01adf7;
+    left: -20px;
+    top: -20px;
+    border-radius: 50%;
+    transition: 1s linear;
+    
+}
+
+.rotatorMe3 {
+    /* background-color:hotpink; */
+    transition: 1s linear;
+    width: 650px;
+    height: 654px;
+    font-size: 60px;
+
+}
+
+.center.rotatorMe3 .number{
+    --rotation:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    opacity: 0.6;
+    color: wheat;
+}
+
+
+
+.center.rotatorMe3 .number1{
+    --rotation:30deg;
+}
+
+.center.rotatorMe3 .number2{
+    --rotation:60deg;
+}
+
+
+.center.rotatorMe3 .number3{
+    --rotation:90deg;
+}
+
+.center.rotatorMe3 .number4{
+    --rotation:120deg;
+}
+
+.center.rotatorMe3 .number5{
+    --rotation:150deg;
+}
+
+.center.rotatorMe3 .number6{
+    --rotation:180deg;
+}
+
+.center.rotatorMe3 .number7{
+    --rotation:210deg;
+}
+
+.center.rotatorMe3 .number8{
+    --rotation:249deg;
+}
+
+.center.rotatorMe3 .number9{
+    --rotation:270deg;
+}
+
+.center.rotatorMe3 .number10{
+    --rotation:300deg;
+}
+
+.center.rotatorMe3 .number11{
+    --rotation:330deg;
+}
+
+
+
+.removeDot{
+  margin-left: 10000px;
+}
+
+
+
+.center.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 400%;
+    color: rgb(255, 231, 231);
+}
+
+
+
+
+
+
+
+.container.theRealTime{
+  
+    transform: scale(1);
+    transition: 1s ease-in;
+}
+
+.container.theRealTime.remove{
+    
+    transform: scale(0);
+    transition: 1s ease-in;
+}
+
+.container.myOwnTime{
+
+
+    transform: scale(1);
+    transition: 1s ease-in;
+}
+
+.container.myOwnTime.remove{
+    
+    transform: scale(0);
+    transition: 1s ease-in-out;
+} 
+
+
+
+.toggler{
+    /* z-index: 9999999; */
+    width: 30%;
+    position: absolute;
+    background-color: rgba(63, 59, 108,0.4);
+    font-size: 20px;
+    color:  #bfc0c0;
+    padding: 2% 3% 2%;
+    border: 1px solid #bfc0c0;
+    transition: 0.5s;
+    border-radius:10px;
+    top:105%
+    
+} 
+
+
+
+.toggler:hover{
+    background-color: #0000ff1a;
+    transition: 0.5s;
+    
+}
+
+.clock{
+    position: absolute;
+    font-size: 50px;
+    color: black;
+}
+.clock .number{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    position:absolute;
+}
+  
+@media(max-width:500px){
+
+    #bigContainer{
+        margin-top: -12%;
+    }
+  
+    .smallContainer{
+        width: 290px;
+        height: 290px;   
+    }
+
+    .center{
+        width: 70%;
+        height: 70%;
+      
+        position: absolute;
+    } 
+    
+    .center.container{
+        
+        font-size: 260%;
+      
+    }
+
+    .rotatorMe3 {
+        /* background-color:hotpink; */
+        transition: 1s linear;
+        width: 365px;
+        height: 365px;
+        font-size: 30px;
+    
+    }
+
+    
+.rotator::before{
+    width: 20px;
+    height: 20px; 
+}
+
+.rotator1::before{
+    width: 20px;
+    height: 20px; 
+}
+
+.rotator2::before{
+    width: 20px;
+    height: 20px; 
+}
+
+.rotatorMe1::before{
+    width: 20px;
+    height: 20px; 
+}
+
+.rotatorMe2::before{
+    width: 20px;
+    height: 20px; 
+}
+
+.rotatorMe::before{
+    width: 20px;
+    height: 20px; 
+}
+
+
+    .toggler{
+        margin-top: 70px;
+    }
+
+    
+
+    
+   
+    
+
+} 
